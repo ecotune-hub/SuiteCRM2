@@ -16,3 +16,5 @@ Download immutable action package 'actions/upload-pages-artifact@v3'
 Getting action download info
 Download immutable action package 'actions/upload-artifact@v4'
 Complete job name: build
+Run gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
+{}
