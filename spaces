@@ -16,5 +16,11 @@ Download immutable action package 'actions/upload-pages-artifact@v3'
 Getting action download info
 Download immutable action package 'actions/upload-artifact@v4'
 Complete job name: build
-Run gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
-{}
+Run actions/jekyll-build-pages@v1
+  with:
+    source: ./docs
+    destination: ./docs/_site
+    future: false
+    build_revision: 886e42c6ffc0dc121689783ce380831b7a8c3311
+    verbose: true
+    token: ***
